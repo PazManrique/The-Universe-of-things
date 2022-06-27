@@ -1,6 +1,9 @@
-<template>
-  <div class="greetings">
-    <h1> No entiendo nada </h1>
+<script>
+</script>
 
-  </div>
+<template>
 </template>
+
+
+<style lang="scss">
+</style>

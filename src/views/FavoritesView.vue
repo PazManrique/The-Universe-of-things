@@ -1,16 +1,20 @@
+<script setup>
+import Fav from "@/components/my_components/Fav.vue"
+import Nav from "../components/my_components/Nav.vue";
+</script>
+
 <template>
-  <div class="Favorites">
-    <h1>This is  favorites page</h1>
-  </div>
+<Fav></Fav>
+<Nav></Nav>
 </template>
 
-<style>
+<style lang="css" scoped>
 
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+
 </style>
+
+
+
+
+
+
