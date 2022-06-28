@@ -8,33 +8,53 @@ export default{
 
 
 <template>
-  <div id="bomb" class="card mb-5 mt-5" style="width: 18rem">
+<!-- <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <div :id="heroe.id" class="card mb-5 mt-5" style="width: 18rem">
     <div class="d-flex justify-content-between">
       <h5 class="card-title"> {{heroe.name}}</h5>
-      <h6>Power: 100</h6>
+      <h6>Power: {{heroe.powerstats.power}}</h6>
     </div>
-    <img
-      src="https://vignette.wikia.nocookie.net/marvel/images/a/ab/A-Bomb_(Rick_Jones).jpg/revision/latest?cb=20110404170428&path-prefix=es"
+    <img :src="heroe.images.md"
       class="card-img-top"
-      alt="..."
+      :alt="heroe.name"
     />
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <i class="fa-solid fa-brain" style="color: purple"></i> Intelligence {{heroe.intelligence}}
+        <i class="fa-solid fa-brain" style="color: purple"></i> Intelligence: {{heroe.powerstats.intelligence}}
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-hand-back-fist" style="color: chocolate"></i> {{heroe.strength}}
-        Strength
+        <i class="fa-solid fa-hand-back-fist" style="color: chocolate"></i> Strength: {{heroe.powerstats.strength}}
+        
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-person-running" style="color: green"></i> Speed: {{heroe.speed}}
+        <i class="fa-solid fa-person-running" style="color: green"></i> Speed: {{heroe.powerstats.speed}}
       </li>
       <li class="list-group-item">
         <i class="fa-solid fa-battery-quarter" style="color: blue"></i>
-        Durability {{heroe.durability}}
+        Durability: {{heroe.powerstats.durability}}
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-bomb" style="color: red"></i>Combat {{heroe.combat}}
+        <i class="fa-solid fa-bomb" style="color: red"></i>Combat: {{heroe.powerstats.combat}}
       </li>
     </ul>
 
@@ -44,13 +64,16 @@ export default{
       ></a>
     </div>
   </div>
+
+
 </template>
 
 <style lang="scss" scoped>
-img {
-  width: 30%;
-}
+// img {
+//   width: 30%;
+// }
 body {
+  display: flex;
   padding: 1vw;
   padding-left: 30vh;
   margin-top: 2vw;
