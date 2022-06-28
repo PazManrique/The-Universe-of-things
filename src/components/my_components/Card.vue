@@ -8,27 +8,6 @@ export default{
 
 
 <template>
-<!-- <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
   <div :id="heroe.id" class="card mb-5 mt-5" style="width: 18rem">
     <div class="d-flex justify-content-between">
       <h5 class="card-title"> {{heroe.name}}</h5>
@@ -69,13 +48,14 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-// img {
-//   width: 30%;
-// }
+
 body {
-  display: flex;
   padding: 1vw;
   padding-left: 30vh;
   margin-top: 2vw;
+}
+
+.card mb-5 mt-5{
+  background-color: yellow;
 }
 </style>
