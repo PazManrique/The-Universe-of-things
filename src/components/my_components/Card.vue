@@ -10,7 +10,7 @@ export default {
 
 <div class="d-flex justify-content-center" >
 
-  <div :id="heroe.id" class="card text-bg-success mb-3" style="max-width: 18rem;">
+  <div :id="heroe.id" class="card mb-5 mt-5" style="width: 18rem">
   
     <div class="d-flex justify-content-between">
       <h5 class="card-title"> {{heroe.name}}</h5>
