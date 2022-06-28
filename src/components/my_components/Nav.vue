@@ -1,4 +1,5 @@
-<script setup></script>
+<script> 
+</script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-dark fixed-top">

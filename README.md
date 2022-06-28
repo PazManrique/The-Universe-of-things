@@ -1,6 +1,6 @@
-# vue-project
+# Universe of things 
 
-This template should help get you started developing with Vue 3 in Vite.
+This project
 
 ## Recommended IDE Setup
 
@@ -40,7 +40,7 @@ npm run test:unit
 npm run lint
 ```
 
-##GitHub
+## GitHub
 git remote add origin https://github.com/PazManrique/The-Universe-of-things.git
 git branch -M main
 git push -u origin main

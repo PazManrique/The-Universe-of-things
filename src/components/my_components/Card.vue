@@ -1,9 +1,16 @@
-<script setup></script>
+<script>
+export default{
+  props: {
+    heroe: Object
+  }
+}
+</script>
+
 
 <template>
-  <div id= "bomb" class="card mb-5 mt-5" style="width: 18rem">
+  <div id="bomb" class="card mb-5 mt-5" style="width: 18rem">
     <div class="d-flex justify-content-between">
-      <h5 class="card-title">A-Bomb</h5>
+      <h5 class="card-title"> {{heroe.name}}</h5>
       <h6>Power: 100</h6>
     </div>
     <img
@@ -13,21 +20,21 @@
     />
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
-        <i class="fa-solid fa-brain" style="color: purple"></i> Intelligence
+        <i class="fa-solid fa-brain" style="color: purple"></i> Intelligence {{heroe.intelligence}}
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-hand-back-fist" style="color: chocolate"></i>
+        <i class="fa-solid fa-hand-back-fist" style="color: chocolate"></i> {{heroe.strength}}
         Strength
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-person-running" style="color: green"></i> Speed
+        <i class="fa-solid fa-person-running" style="color: green"></i> Speed: {{heroe.speed}}
       </li>
       <li class="list-group-item">
         <i class="fa-solid fa-battery-quarter" style="color: blue"></i>
-        Durability
+        Durability {{heroe.durability}}
       </li>
       <li class="list-group-item">
-        <i class="fa-solid fa-bomb" style="color: red"></i>Combat
+        <i class="fa-solid fa-bomb" style="color: red"></i>Combat {{heroe.combat}}
       </li>
     </ul>
 
@@ -48,6 +55,4 @@ body {
   padding-left: 30vh;
   margin-top: 2vw;
 }
-
-
 </style>

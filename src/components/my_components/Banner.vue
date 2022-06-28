@@ -6,7 +6,7 @@
 <template>
 
 <img class="img-fluid" src="src/assets/Superheroinas.jpg" alt="Imagen de grupo de superwoman,catwoman, wonderwoman, poison ivy" > 
-¡
+
 </template>
 
 
