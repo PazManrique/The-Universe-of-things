@@ -1,14 +1,17 @@
 <script>
-export default{
+export default {
   props: {
-    heroe: Object
-  }
+    heroe: Object,
+  },
 }
 </script>
 
-
 <template>
-  <div :id="heroe.id" class="card mb-5 mt-5" style="width: 18rem">
+
+<div class="d-flex justify-content-center" >
+
+  <div :id="heroe.id" class="card text-bg-success mb-3" style="max-width: 18rem;">
+  
     <div class="d-flex justify-content-between">
       <h5 class="card-title"> {{heroe.name}}</h5>
       <h6>Power: {{heroe.powerstats.power}}</h6>
@@ -37,12 +40,14 @@ export default{
       </li>
     </ul>
 
-    <div class="card-body">
-      <a href="#" class="card-link">
-        <i class="fa-solid fa-heart" style="color: crimson"></i
-      ></a>
+       <div class="card-body">
+               <a href="#" class="card-link">
+              <i class="fa-solid fa-heart" style="color: crimson"></i> </a>
+           </div>
     </div>
   </div>
+  
+ 
 
 
 </template>
@@ -53,6 +58,7 @@ body {
   padding: 1vw;
   padding-left: 30vh;
   margin-top: 2vw;
+  
 }
 
 </style>

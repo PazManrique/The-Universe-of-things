@@ -11,6 +11,7 @@ export default {
     return {
       superHeroeList: [
       ],
+    
     }
   },
   components: { Card, Nav, Header, Banner, SuperHeroeOfTheMonth, IconPencil },
