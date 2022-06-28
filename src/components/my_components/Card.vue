@@ -55,7 +55,4 @@ body {
   margin-top: 2vw;
 }
 
-.card mb-5 mt-5{
-  background-color: yellow;
-}
 </style>
