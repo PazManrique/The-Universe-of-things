@@ -15,8 +15,9 @@ import IconPencil from '../components/icons/IconPencil.vue';
     <Nav></Nav>
     <Header></Header>
     <Banner></Banner>
-    <Card></Card>
     <SuperHeroeOfTheMonth></SuperHeroeOfTheMonth>
+    <Card></Card>
+    
     <IconPencil></IconPencil>
   </main>
 </template>

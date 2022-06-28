@@ -4,19 +4,17 @@
 
 <template>
 <h1> Favoritos </h1>
-<h2> Patatin </h2>
+
 </template>
 
 
 <style lang="scss" scoped>
 
 h1{
-    color:black
+    color: hsl(0, 0%, 100%)
 }
 
-h2{
-    color:blue
-}
+
 </style>
 
 
