@@ -37,18 +37,21 @@ export default {
     <!-- <section id="cards" class="d-flex ms-5 me-5">
      <div class="row row-cols-3 row-cols-sm-2  row-cols-md-3 ">
           <div class="col">-->
+    
     <div class="d-flex flex-wrap ms-5 me-5">
-      <div v-for="heroe in superHeroeList" :key="key">
+      <div v-for="heroe in superHeroeList.slice(0, 30)" :key="key">
         <Card :heroe="heroe" />
       </div>
     </div>
+    
     <!--</div>
       </div>
     </section>-->
 
+
     <!--<IconPencil />-->
-    <hr class="bg-warning"/>
-    <Footer/>
+    <hr class="bg-warning" />
+    <Footer />
 
   </main>
 </template>
