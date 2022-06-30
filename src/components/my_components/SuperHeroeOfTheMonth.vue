@@ -2,6 +2,7 @@
 </script>
 
 <template>
+
 <div class="card" style="width: 18rem;">
 <div class=" d-flex justify-content-between">
  <h5 class="card-title"> Super Giaco </h5>
@@ -19,17 +20,7 @@
     <a href="#" class="card-link"> <i class="fa-solid fa-heart" style="color:crimson"></i></a>
  
   </div>
-</div>
-</template>
+</div> 
 
 
-<style lang="scss" scoped>
-.card{
-  background-image: url(https://ak.picdn.net/shutterstock/videos/1063204336/thumb/4.jpg?ip=x480);
-}
-.list-group-item{
-  background-image:url(https://ak.picdn.net/shutterstock/videos/1063204336/thumb/4.jpg?ip=x480);
-} ;
-  
 
-</style>
