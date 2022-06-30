@@ -6,7 +6,7 @@
 <div class="card" style="width: 18rem;">
 <div class=" d-flex justify-content-between">
  <h5 class="card-title"> Super Giaco </h5>
- <h6>Power: 100</h6>
+ <h6>Power: 1000</h6>
 </div>
   <img src="src\assets\diseño3.jpg" class="card-img-top" alt="...">
   <ul class="list-group list-group-flush">
@@ -22,5 +22,5 @@
   </div>
 </div> 
 
-
+</template>
 

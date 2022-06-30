@@ -34,10 +34,17 @@ export default {
     <Header />
     <Banner />
     <SuperHeroeOfTheMonth />
-    <div v-for="heroe in superHeroeList" :key="key">
-      <Card :heroe="heroe" />
-    </div>
+    <div class="d-flex flex-wrap ms-5 me-5 justify-content-center" >
 
-    <IconPencil />
+      <div v-for="heroe in superHeroeList" :key="key">
+        <Card :heroe="heroe" />
+      </div>
+      </div>
+
+      <IconPencil />
   </main>
 </template>
+<style>
+
+
+</style>
