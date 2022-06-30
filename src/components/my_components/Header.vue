@@ -13,6 +13,7 @@
 
 
 header{
+<<<<<<< HEAD
   display: flex;
   justify-content: space-around;
     background-color: #F9D616;
@@ -34,4 +35,24 @@ h1 {
 
    
 
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: #F9D616;
+    height: 15vh;
+    
+ 
+
+       
+h1 {
+  
+
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 15vh;
+
+}
+}
+
+>>>>>>> Paz
 </style>
