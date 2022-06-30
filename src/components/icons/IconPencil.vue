@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <script setup>
 
 </script>
@@ -9,4 +7,3 @@
 <!-- <font-awesome-icon icon="fa-thin fa-1" />
 <font-awesome-icon icon="fa-duotone fa-alien" /> -->
 </template>
->>>>>>> Paz
