@@ -1,57 +1,62 @@
-<script>
-</script>
+<script></script>
 
 <template>
-<div class="d-flex justify-content-center">
-
-  <div class="d-flex justify-content-between">
-    <div class="card" style="width: 18rem">
-      <div class="d-flex justify-content-between">
-        <h5 class="card-title">Super Giaco</h5>
-        <h6>Power: 1000</h6>
-      </div>
-      <img src="src\assets\diseño3.jpg" class="card-img-top" alt="..." />
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <i class="fa-brands fa-mandalorian" style="color: green"></i>
-          Programming
-        </li>
-        <li class="list-group-item">
-          <i class="fa-brands fa-jedi-order" style="color: maroon"></i> Patience
-        </li>
-        <li class="list-group-item">
-          <i class="fa-brands fa-galactic-senate" style="color: blueviolet"></i>
-          Funny
-        </li>
-        <li class="list-group-item">
-          <i
-            class="fa-brands fa-old-republic"
-            style="color: mediumvioletred"
-          ></i>
-          Compromise
-        </li>
-        <li class="list-group-item" style="color: navy">
-          <i class="fa-brands fa-galactic-republic"></i> Intelligence
-        </li>
-      </ul>
-      <div class="card-body">
-        <div class="card-body d-flex justify-content-end">
-          <a href="#" class="card-link">
-            <i class="fa-solid fa-heart" style="color: crimson"></i
-          ></a>
+  <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-between">
+      <div class="card" style="width: 18rem">
+        <div class="d-flex justify-content-between">
+          <h5 class="card-title">Super Giaco</h5>
+          <h6>Power: 1000</h6>
         </div>
+        <img src="src\assets\diseño3.jpg" class="card-img-top" alt="..." />
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="fa-brands fa-mandalorian" style="color: green"></i>
+            Programming: <b> Nivel leyenda </b>
+          </li>
+          <li class="list-group-item">
+            <i class="fa-brands fa-jedi-order" style="color: maroon"></i>
+            Patience: 500
+          </li>
+          <li class="list-group-item">
+            <i
+              class="fa-brands fa-galactic-senate"
+              style="color: blueviolet"
+            ></i>
+            Funny: 500
+          </li>
+          <li class="list-group-item">
+            <i
+              class="fa-brands fa-old-republic"
+              style="color: mediumvioletred"
+            ></i>
+            Compromise: 500
+          </li>
+          <li class="list-group-item" style="color: navy">
+            <i class="fa-brands fa-galactic-republic"></i> Intelligence: 500
+          </li>
+        </ul>
+        <div class="card-body">
+          <div class="card-body d-flex justify-content-end">
+            <a href="#" class="card-link">
+              <i class="fa-solid fa-heart" style="color: crimson"></i
+            ></a>
+          </div>
+        </div>
+        <span class="operator">+</span>
+        <div class="card"></div>
+        <span class="operator">+</span>
+        <div class="card"></div>
+        <span class="operator">=</span>
+        <div class="card"></div>
       </div>
-      <span class="operator">+</span>
-      <div class="card"></div>
-      <span class="operator">+</span>
-      <div class="card"></div>
-      <span class="operator">=</span>
-      <div class="card"></div>
     </div>
+    <img
+      id="publi"
+      src="src\assets\WhatsApp Image 2022-06-30 at 10.43.50 PM.jpeg"
+      class="img-fluid"
+    />
   </div>
-  <img id="publi" src="src\assets\WhatsApp Image 2022-06-30 at 10.43.50 PM.jpeg" class="img-fluid" > 
-
-</div>
 </template>
 
 <style lang="css" scoped>
@@ -89,13 +94,6 @@
   right: 0;
   bottom: 0;
   top: 0;
-  /* background-image: linear-gradient(
-    115deg,
-    transparent 0%,
-    rgb(0, 231, 255) 30%,
-    rgb(255, 0, 231) 70%,
-    transparent 100% */
-  /* ) */
 }
 .card:after {
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif');
@@ -120,7 +118,6 @@
     transparent 100%
   );
 }
-
 
 @keyframes holoSparkle {
   0% {
@@ -174,10 +171,9 @@ h6 {
   color: hsl(0, 0%, 80%);
 }
 
-#publi{
+#publi {
   width: 15vh;
   height: 15vh;
   margin-left: 3vh;
-
 }
 </style>
