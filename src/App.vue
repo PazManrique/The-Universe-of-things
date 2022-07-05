@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/home"></RouterLink>
         <RouterLink to="/favorites"> </RouterLink>
+       
       </nav>
     </div>
   </header>
@@ -20,8 +21,5 @@ body {
   background-color: hsl(0, 0%, 0%);
 }
 
-// * {
-//   // margin: 0;
-//   // padding: 0;
-// }
+
 </style>

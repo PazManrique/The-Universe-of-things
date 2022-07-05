@@ -17,7 +17,7 @@ header {
   .h1,
   h1 {
     font-family: 'Goudy Bookletter 1911', serif;
-    font-size: calc(1.375rem + 7vw);
+    font-size: calc(1.375rem + 5vw);
   }
 }
 </style>
