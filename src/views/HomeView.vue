@@ -27,9 +27,7 @@ export default {
   created() {
     fetch('https://akabab.github.io/superhero-api/api/all.json')
       .then((response) => response.json())
-      .then((data) => {
-        this.superHeroeList = data
-      })
+      .then((data) => {this.superHeroeList = data})
       .catch(function (error) {
         console.log('Hubo un problema con la petición Fetch:' + error.message)
       })

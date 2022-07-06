@@ -2,21 +2,17 @@
 import { mapActions, mapState } from 'pinia'
 import { userFavStore } from '../../stores/favorites'
 
-
 export default {
   props: {
     heroe: Object,
   },
-  computed:{
-    ...mapState(userFavStore,{favorites: 'Heart'})},
-  methods: {
-    ...mapActions(userFavStore, ['addFavorites', 'deleteFavorites'] )
+  computed: {
+    ...mapState(userFavStore, { favorites: 'Heart' }),
   },
-  
-
+  methods: {
+    ...mapActions(userFavStore, ['addFavorites', 'deleteFavorites']),
+  },
 }
-
-
 </script>
 
 <template>
@@ -54,9 +50,14 @@ export default {
     </ul>
 
     <div class="card-body d-flex justify-content-end">
-      <div  class="card-link" v-on:click="addFavorites">
-        <i class="fa-solid fa-heart" id="heart" style="color: crimson"></i
-      ></div>
+      <div class="card-link" v-on:click="addFavorites">
+        <i
+          class="fa-solid fa-heart"
+          href=""
+          id="heart"
+          style="color: crimson"
+        ></i>
+      </div>
     </div>
   </div>
 </template>

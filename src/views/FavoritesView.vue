@@ -1,22 +1,24 @@
-<script setup>
+<script>
+import { mapState } from 'pinia'
+import { userFavStore } from '../stores/favorites'
 
-import Nav from '../components/my_components/Nav.vue'
-import Header from '../components/my_components/Header.vue'
-import Fav from '../components/my_components/Fav.vue';
+export default {
+  data() {
+    return {
+      superHeroeList: [],
+    }
+  },
 
+  computed: {
+    ...mapState(userFavStore, ['heroe', 'favorite']),
+  },
+
+  
+}
 </script>
 
 <template>
-    <Header></Header>
-    <Nav></Nav>  
-    <Fav/>
-   
-    
-   
-  
-
-     
+<Nav></Nav>
 </template>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>
