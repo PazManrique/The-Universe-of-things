@@ -7,7 +7,7 @@ export default {
     heroe: Object,
   },
   computed: {
-    ...mapState(userFavStore, { favorites: 'Heart' }),
+    ...mapState(userFavStore, { favorites: 'heart' }),
   },
   methods: {
     ...mapActions(userFavStore, ['addFavorites', 'deleteFavorites']),
