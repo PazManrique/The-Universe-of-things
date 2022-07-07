@@ -1,5 +1,5 @@
 <script>
-import { mapActions, mapState } from 'pinia'
+import { mapActions, mapState, mapWritableState } from 'pinia'
 import { userFavStore } from '../../stores/favorites'
 
 export default {
@@ -7,7 +7,7 @@ export default {
     heroe: Object,
   },
   computed: {
-    ...mapState(userFavStore, { favorites: 'heart' }),
+    ...mapWritableState(userFavStore, ['favorites']),
   },
   methods: {
     ...mapActions(userFavStore, ['addFavorites', 'deleteFavorites']),
@@ -50,7 +50,7 @@ export default {
     </ul>
 
     <div class="card-body d-flex justify-content-end">
-      <div class="card-link" v-on:click="addFavorites">
+      <div class="card-link" v-on:click="addFavorites(heroe)">
         <i
           class="fa-solid fa-heart"
           href=""

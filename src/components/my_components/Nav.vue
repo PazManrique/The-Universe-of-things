@@ -1,4 +1,9 @@
-<script></script>
+<script setup>
+
+import { RouterLink, RouterView } from 'vue-router'
+
+
+</script>
 
 <template>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
@@ -17,10 +22,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-3 mb-lg-0">
           <li class="nav-item p-2">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <RouterLink to="/">Home</RouterLink>
           </li>
           <li class="nav-item p-2">
-            <a class="nav-link" href="/favorites">Favoritos</a>
+            <RouterLink to="/favorites">Favoritos</RouterLink>
           </li>
         </ul>
       </div>

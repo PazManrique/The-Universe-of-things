@@ -31,7 +31,7 @@ export default {
       .catch(function (error) {
         console.log('Hubo un problema con la petición Fetch:' + error.message)
       })
-  },
+  }
 }
 </script>
 
@@ -43,7 +43,8 @@ export default {
     <SuperHeroeOfTheMonth />
     <div class="d-flex flex-wrap ms-5 me-5 justify-content-center">
       <div class="d-flex flex-wrap ms-5 me-5">
-        <div v-for="heroe in superHeroeList.slice(0, 100)" :key="key">
+        
+        <div v-for="(heroe,key) in superHeroeList.slice(0, 100)" :key="key">
           <Card :heroe="heroe" />
         </div>
       </div>

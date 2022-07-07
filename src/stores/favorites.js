@@ -5,7 +5,7 @@ export const userFavStore = defineStore({
   state: () => ({
     favorites: [],
   }),
-  methods: {
+  actions: {
     addFavorites(heroe) {
       this.favorites.push(heroe)
     },
