@@ -82,4 +82,9 @@ body {
   font-family: 'Lexend', sans-serif;
   font-weight: bolder;
 }
+
+#heart{
+  cursor: pointer;
+}
+
 </style>
